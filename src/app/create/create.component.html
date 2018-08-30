@@ -1,0 +1,11 @@
+<h3>Agregar Clase</h3>
+<hr />
+<div class="form-group">
+  <label >Nombre</label>
+  <input type="text" class="form-control" placeholder="Nombre" #name>
+</div>
+<div class="form-group">
+  <label >Url</label>
+  <input type="url" class="form-control" placeholder="URL" #url>
+</div>
+<button class="btn btn-block btn-primary" (click)="addClass(name.value, url.value)">Guardar</button>

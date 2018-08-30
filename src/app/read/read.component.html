@@ -1,0 +1,7 @@
+<h3>Classes</h3>
+<hr />
+<ul>
+  <li *ngFor="let class of classes | async; let i = index" (click)="delClass(i)">
+    <a [href]="class.url">{{class.name}}</a>
+  </li>
+</ul>
